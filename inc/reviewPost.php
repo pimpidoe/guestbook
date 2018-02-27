@@ -6,7 +6,7 @@ if ($result->num_rows > 0) {
 echo "<table><tr><th>firstname</th><th>lastname</th><th>email</th><th>review</th><th>date</th></tr>";
 // output data of each row
 while ($row = $result->fetch_assoc()) {
-  echo "<tr><td>" . strftime("%d-%I-%Y \n %X", $row["date"]). "</td><td>" . $row["review"]. "</td><td>" . $row["ratingReview"]. "</td></tr>";
+  echo "<tr><td>" . $row["firstname"]. "</td><td>" . $row["lastname"]. "</td><td>" . strftime("%d-%I-%Y \n %X", $row["date"]). "</td><td>" . $row["review"]. "</td></tr>";
 }
 echo "</table>";
 } else {
