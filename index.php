@@ -20,7 +20,6 @@
 <textarea class="reviewBox" placeholder="Write your review here..."></textarea></br>
 <button class="button" = type="reset"> Send review </button>
 <button class="button"> Clear </button>
-<td>"<img src=".'uploads/'.$row['image']." />"</td>
 <footer id="footer">
 Guestbook made by PM-Studios © 2018
 </footer>

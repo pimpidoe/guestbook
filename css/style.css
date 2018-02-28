@@ -1,3 +1,7 @@
+body{
+  background-image: url('inc/background.png')
+}
+
 .input{
   margin-bottom: 5px;
   width: 200px;
