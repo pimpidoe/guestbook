@@ -1,5 +1,4 @@
 <?php include  'inc/connection.php'?>
-<?php include 'inc/reviewPost.php'?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,16 +11,18 @@
 </head>
 <body>
 <header id="header"><img src="img/header.png"></header>
-
-<input type="text" class="input" placeholder="First name"></br>
-<input type="text" class="input" placeholder="Last name" required></br>
-<input type="text" class="input" placeholder="E-mail"></br>
-<input type="text" class="input" placeholder="Website adress"></br>
-<textarea class="reviewBox" placeholder="Write your review here..."></textarea></br>
-<button class="button" = type="reset"> Send review </button>
-<button class="button"> Clear </button>
+<form action="Insert.php" method="POST">
+<input type="text" class="input" placeholder="First name" name="firstName" required></br>
+<input type="text" class="input" placeholder="Last name" name="lastName" required></br>
+<input type="text" class="input" placeholder="E-mail" name="Email" required></br>
+<input type="text" class="input" placeholder="Website adress" name="websiteAddress" required></br>
+<textarea class="reviewBox" placeho.lder="Write your review here..." name="message" required></textarea></br>
+<button class="button" type="submit"> Send review </button>
+<button class="button" type="reset"> Clear </button>
+</form>
 <footer id="footer">
 Guestbook made by PM-Studios © 2018
 </footer>
+<?php include 'inc/reviewPost.php'?>
 </body>
 </html>

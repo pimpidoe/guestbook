@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "gameworld";
+$dbname = "guestbook";
 
 //create connection
 $conn = new mysqli($servername, $username, $password, $dbname );
