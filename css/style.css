@@ -1,7 +1,8 @@
 body{
-  background-image: url('../img/background.png');
+  background-image: url('../img/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  scroll-behavior: auto;
 }
 
 .input{
@@ -20,6 +21,9 @@ body{
   color: white;
   font-size: 30px;
   text-align: center;
+  width: 99%;
+  position: fixed;
+  bottom: 0;
 }
 
 .button{
